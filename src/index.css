@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+a:focus {
+  outline: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url("./background/156418-dart_vejder-zvezdnye_vojny-no_strah-grand_admiral_traun-art-1920x1080.jpg");
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  background-position: center center;
+}
+
+.btn-color {
+  background: #bb4341;
+}
+
+.text-color {
+  color: #bb4341;
 }
